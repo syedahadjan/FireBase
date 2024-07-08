@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S. Authentication</title>
+    <link rel="stylesheet" href="styles_hidden.css">
+</head>
+<body>
+
+    <div id="auth_container" class="container">
+        <div class="logo">
+            <img src="images/cat1.webp" alt="Logo" class="logo-img">
+        </div>
+        <div class="auth_form">
+            <h3>Sign in to your account</h3>
+            <input type="email" placeholder="Email" id="signin_email">
+            <input type="password" placeholder="Password" id="signin_password">
+            <button id="signin_btn">Sign in</button>
+        </div>
+
+        <button id="toggle_signup_btn">Create Account</button>
+
+        <div class="auth_form" id="signup_form" style="display: none;">
+            <h3>CREATE ACCOUNT</h3>
+            <input type="email" placeholder="Email" id="signup_email">
+            <input type="password" placeholder="Password" id="signup_password">
+            <button id="signup_btn">Create Account</button>
+        </div>
+    </div>
+
+    <div id="user_container" class="container" style="display: none;">
+        <h1 id="user_email"></h1>
+        <button id="logout_btn">Logout</button>
+        <div id="product_form">
+            <h3>Add Product</h3>
+            <input type="text" placeholder="Category" id="product_category">
+            <input type="text" placeholder="Product Name" id="product_name">
+            <input type="number" placeholder="Product Price" id="product_price">
+            <button id="add_product_btn">Add Product</button>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

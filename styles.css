@@ -1,0 +1,93 @@
+body {
+    background: url(images/wall1.avif) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* absolute child */
+} 
+
+.logo {
+    position: absolute;
+    top: -50px; /* Adjust this value to position logo */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+}
+
+.logo-img {
+    width: 100px; /* Adjust based on your logo dimensions */
+    height: 100px;
+    border-radius: 50%; /* For circular logos */
+}
+
+.auth_form {
+    margin-top: 30px; /* Adjust spacing from logo */
+}
+
+h3 {
+    color: #00FFFF;
+    font-size: 28px; /* Increased font size for headings */
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%; /* Increased input width for better usability */
+    padding: 15px; /* Increased padding for larger inputs */
+    margin: 15px 0; /* Increased margin for better spacing */
+    border: 1px solid #00FFFF;
+    border-radius: 8px; /* Slightly increased border radius */
+    background: #333;
+    color: #fff;
+    outline: none;
+    font-size: 18px; /* Increased font size for inputs */
+}
+
+input::placeholder {
+    color: #888;
+    font-size: 16px; /* Increased font size for placeholder text */
+}
+
+button {
+    width: 90%; /* Increased button width for better touch targets */
+    padding: 15px; /* Increased padding for larger buttons */
+    border: none;
+    border-radius: 8px; /* Slightly increased border radius */
+    background: linear-gradient(90deg, #FF007F 0%, #00FFFF 100%);
+    color: white;
+    font-size: 20px; /* Increased font size for buttons */
+    cursor: pointer;
+    margin: 15px 0; /* Increased margin for better spacing */
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #00FFFF 0%, #FF007F 100%);
+}
+
+#user_container h1 {
+    color: #00FFFF;
+}
+
+#user_container button {
+    margin-top: 20px;
+}
+
+#product_form {
+    margin-top: 20px;
+}
